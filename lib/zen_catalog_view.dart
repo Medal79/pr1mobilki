@@ -45,8 +45,6 @@ class MeditationCatalogScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 18),
-
-              // 1. СВЕРХУ: Солнце и месяц (A Song of Moon)
               _buildBigCard(
                 imagePath: 'assets/images/img3.png',
                 title: 'A Song of Moon',
@@ -54,10 +52,6 @@ class MeditationCatalogScreen extends StatelessWidget {
                 meta: '9 Sessions',
               ),
               const SizedBox(height: 16),
-
-              // 2. СРЕДНИЙ РЯД: 
-              // Слева: оранжевый фон (The Sleep Hour)
-              // Справа: месяц в облаке (Easy on the Mission)
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -81,10 +75,6 @@ class MeditationCatalogScreen extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 16),
-
-              // 3. НИЖНИЙ РЯД:
-              // Слева: синее небо с планетой (Relax with Me)
-              // Справа: бирюзовый пейзаж (Sun and Energy)
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

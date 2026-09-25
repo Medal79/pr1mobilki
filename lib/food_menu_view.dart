@@ -168,8 +168,6 @@ class _FoodTile extends StatelessWidget {
               width: 60,
               height: 60,
               fit: BoxFit.cover,
-              // Если картинка не найдена (не добавили asset), показываем
-              // серый плейсхолдер вместо краша экрана.
               errorBuilder: (context, error, stackTrace) => Container(
                 width: 60,
                 height: 60,

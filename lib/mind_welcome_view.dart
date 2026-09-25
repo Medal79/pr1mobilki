@@ -9,14 +9,9 @@ class MedinowWelcomeScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: primaryColor,
-      // SingleChildScrollView гарантирует, что если контент не влезает
-      // по высоте (как было с переполнением на 33px), экран просто
-      // проскроллится, а не выдаст RenderFlex overflow.
       body: SafeArea(
         child: SingleChildScrollView(
           child: ConstrainedBox(
-            // Не даём контенту быть меньше высоты экрана, чтобы
-            // фон полностью закрашивался даже на низких экранах.
             constraints: BoxConstraints(
               minHeight: MediaQuery.of(context).size.height -
                   MediaQuery.of(context).padding.top -
@@ -105,9 +100,6 @@ class MedinowWelcomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  // Было: const Spacer() — не работает внутри скролла,
-                  // т.к. у Spacer нет ограничения по высоте для растяжения.
-                  // Заменили на фиксированный отступ.
                   const SizedBox(height: 24),
                   Image.asset(
                     'assets/images/img6.png',
